@@ -11,14 +11,38 @@
    <h1>Is it a Palindrome?</h1>
   </header>
   <main>
-   <form>
-    <label for="text-input">Enter in text to check fot a palindrome</label>
-    <input id="text-input" aria-label="input text here" />
-    <button id="check-btn" aria-label="submit" type="submit">Check</button>
-   </form>
+   <section>
+    <form>
+     <label for="text-input">Enter in text to check for a palindrome</label>
+     <span class="input-wrap">
+      <input id="text-input" aria-label="input text here" />
+      <button id="check-btn" aria-label="submit" type="submit">Check</button>
+     </span>
+    </form>
+   </section>
+   <section>
+    <p>
+     💡 A palindrome is a word or sentence that's spelled the same way both
+     forward and backward, ignoring punctuation, case, and spacing.
+    </p>
+   </section>
    <div id="result"></div>
   </main>
-  <footer></footer>
+  <footer>
+   <a
+    href="https://github.com/RebeccaCL303/palindrome-checker"
+    target="_blank"
+    aria-label="opens a new tab to repository for this project"
+    >Open Source Code</a
+   >
+   by
+   <a
+    href="https://rebeccacl303.github.io/"
+    target="_blank"
+    aria-label="opens a new tab to my portfolio"
+    >Rebecca Leibowitz</a
+   >
+  </footer>
   <script src="./src/index.js"></script>
  </body>
 </html>
