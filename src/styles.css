@@ -69,6 +69,11 @@ main section:last-of-type {
  font-size: 1.3rem;
 }
 
+#result {
+ text-align: center;
+ margin: 10px 0;
+}
+
 #text-input {
  border-color: transparent;
  border-bottom: 2px solid var(--purple-accent);

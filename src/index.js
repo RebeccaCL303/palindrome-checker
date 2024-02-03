@@ -7,9 +7,9 @@ let result;
 const getResult = () => {
  palindromeTestStr = result.split("").reverse().toString().replaceAll(",", "");
  if (palindromeTestStr === result) {
-  console.log("true");
+  resultElement.innerHTML = `<strong>${result}</strong> is a palindrome`;
  } else {
-  console.log("false");
+  resultElement.innerHTML = `<strong>${result}</strong> is not a palindrome`;
  }
 };
 
