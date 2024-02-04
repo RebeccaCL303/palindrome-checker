@@ -4,11 +4,9 @@ const resultElement = document.getElementById("result");
 
 const getResult = () => {
  const str = textInput.value;
- const charsToRemoveRegex = /[\S\W\d]/g;
- const charsToRemove = str.match(charsToRemoveRegex);
- const palindromeTestStr = str.replace(charsToRemove, "").toLowerCase();
+ const palindromeTestStr = str.replace(/[*\S]/g, "").toLowerCase();
  const reverseStr = str
-  .replace(charsToRemove, "")
+  .replace(/[*\S]/g, "")
   .toLowerCase()
   .split("")
   .reverse()
