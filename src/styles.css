@@ -1,9 +1,12 @@
 :root {
- --purple-accent: #480186;
+ --light-accent: #000483;
+ --dark-accent: #00085a;
 }
 
 body {
- background-color: #101010;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../cool-background.png");
+ object-fit: cover;
  color: white;
  padding: 5% 0;
  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -11,16 +14,33 @@ body {
 }
 
 #check-btn {
- background-color: var(--purple-accent);
+ background-color: var(--light-accent);
+ border: 2px inset var(--dark-accent);
  border-radius: 8px;
- border: none;
  padding: 5px 15px;
  margin-left: 10px;
+ color: white;
+ transition: 200ms all ease-in-out;
+}
+
+#check-btn:hover {
+ cursor: pointer;
+ background-color: var(--dark-accent);
+ border: 2px outset var(--light-accent);
 }
 
 footer {
  text-align: center;
- margin: 5rem 0 1rem;
+ margin: 15% auto 1rem;
+ font-size: 1.2rem;
+ background-color: rgba(0, 0, 0, 0.65);
+ padding: 5px;
+ max-width: 50vw;
+ border-radius: 10px;
+}
+
+footer a {
+ color: #7daeff;
 }
 
 .input-wrap {
@@ -40,6 +60,10 @@ header {
  font-size: 1.7rem;
 }
 
+h1 {
+ text-shadow: 0px 0px 20px black;
+}
+
 label {
  display: block;
  margin-bottom: 1.5rem;
@@ -54,19 +78,17 @@ main {
 
 main section {
  border-radius: 10px;
+ background-color: rgba(0, 0, 0, 0.65);
 }
 
 main section:first-of-type {
  padding: 20px 10px;
- background-color: #1f2229;
- box-shadow: 0px 3px 10px blue;
 }
 
 main section:last-of-type {
- background-color: #003916;
  margin: 10% 0;
- padding: 10px;
  font-size: 1.3rem;
+ padding: 5px 10px;
 }
 
 #result {
@@ -76,6 +98,6 @@ main section:last-of-type {
 
 #text-input {
  border-color: transparent;
- border-bottom: 2px solid var(--purple-accent);
+ border-bottom: 2px solid var(--light-accent);
  background-color: transparent;
 }
