@@ -25,6 +25,14 @@ a {
  transition: 200ms all ease-in-out;
 }
 
+#check-btn i {
+ display: none;
+}
+
+#check-btn .desktop-btn {
+ display: contents;
+}
+
 #check-btn:hover {
  cursor: pointer;
  background-color: var(--dark-accent);
@@ -110,4 +118,27 @@ main section:last-of-type {
  border-color: transparent;
  border-bottom: 2px solid var(--light-accent);
  background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+ #check-btn .desktop-btn {
+  display: none;
+ }
+
+ #check-btn i {
+  display: block;
+  color: black;
+ }
+
+ footer {
+  max-width: 90vw;
+ }
+
+ header {
+  font-size: 1rem;
+ }
+
+ input[type="text"] {
+  width: 70%;
+ }
 }
