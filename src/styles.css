@@ -1,6 +1,6 @@
 :root {
- --light-accent: #c6e2e9;
- --dark-accent: #a7bed3;
+ --light-accent: #415a77;
+ --dark-accent: #778da9;
 }
 
 body {
@@ -9,7 +9,11 @@ body {
  object-fit: cover;
  color: white;
  padding: 5% 0;
- font-family: "Ubuntu", sans-serif;
+ font-family: "Poppins", sans-serif;
+}
+
+* {
+ box-sizing: border-box;
 }
 
 a {
@@ -18,11 +22,12 @@ a {
 
 #check-btn {
  background-color: var(--light-accent);
- border: 2px inset var(--dark-accent);
+ border: none;
  border-radius: 8px;
  padding: 5px 15px;
  margin-left: 10px;
  transition: 200ms all ease-in-out;
+ color: white;
 }
 
 #check-btn i {
@@ -36,7 +41,6 @@ a {
 #check-btn:hover {
  cursor: pointer;
  background-color: var(--dark-accent);
- border: 2px outset var(--light-accent);
 }
 
 footer {
@@ -59,6 +63,11 @@ input,
 main,
 button {
  font-size: 1.2rem;
+}
+
+input,
+button {
+ font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -88,14 +97,14 @@ label {
 
 main {
  display: block;
- max-width: 500px;
+ max-width: 600px;
  margin: auto;
 }
 
 main section {
  border-radius: 10px;
  background-color: rgba(0, 0, 0, 0.65);
- border: 1px inset var(--dark-accent);
+ border: 2px inset var(--dark-accent);
 }
 
 main section:first-of-type {
@@ -112,12 +121,17 @@ main section:last-of-type {
 #result {
  text-align: center;
  margin: 10px 0;
+ max-width: 500px;
+ overflow: auto;
 }
 
 #text-input {
- border-color: transparent;
- border-bottom: 2px solid var(--light-accent);
+ border: 2px solid var(--light-accent);
  background-color: transparent;
+ color: white;
+ width: 70%;
+ padding: 5px;
+ border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,6 +142,7 @@ main section:last-of-type {
  #check-btn i {
   display: block;
   color: black;
+  padding: 5px;
  }
 
  footer {
@@ -138,7 +153,7 @@ main section:last-of-type {
   font-size: 1rem;
  }
 
- input[type="text"] {
+ #text-input {
   width: 70%;
  }
 }

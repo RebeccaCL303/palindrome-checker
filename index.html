@@ -7,8 +7,10 @@
   <link href="./src/styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-   href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
    rel="stylesheet" />
   <script
    src="https://kit.fontawesome.com/023aa18226.js"
@@ -23,10 +25,15 @@
     <form name="palindrome-checker">
      <label for="text-input">Enter in text to check for a palindrome</label>
      <span class="input-wrap">
-      <input id="text-input" aria-label="input text here" />
+      <input
+       id="text-input"
+       type="text"
+       minlength="1"
+       maxlength="100"
+       aria-label="input text here" />
       <button id="check-btn" aria-label="submit" type="submit">
        <span class="desktop-btn">Check</span>
-       <i class="fa-solid fa-arrow-right" s></i>
+       <i class="fa-solid fa-arrow-right"></i>
       </button>
      </span>
     </form>
