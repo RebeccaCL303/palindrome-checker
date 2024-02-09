@@ -4,9 +4,9 @@ const resultElement = document.getElementById("result");
 
 const getResult = () => {
  const str = textInput.value;
- const palindromeTestStr = str.replace(/[\s\W]/g, "").toLowerCase();
+ const palindromeTestStr = str.replace(/[\s\W\_]/g, "").toLowerCase();
  const reverseStr = str
-  .replace(/[\s\W]/g, "")
+  .replace(/[\s\W\_]/g, "")
   .toLowerCase()
   .split("")
   .reverse()
